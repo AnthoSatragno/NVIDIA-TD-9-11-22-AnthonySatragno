@@ -1,0 +1,11 @@
+[Unit]
+Description= Lance le service dump-database toute les 10min
+
+[Timer]
+OnCalendar=*:0/10
+AccuracySec=1s
+Unit=dump-database.service
+
+[Install]
+WantedBy=timers.target
+

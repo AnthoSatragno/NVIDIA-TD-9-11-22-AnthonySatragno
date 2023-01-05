@@ -1,0 +1,11 @@
+[Service]
+Description= Sauvegarde database
+Type=oneshot
+RemainAfeterExit=yes
+ExecStart=/home/anthony/Documents/Sauvegarde_DB/dump-database.sh
+
+[Install]
+WantedBy=multi-user.target
+
+
+
